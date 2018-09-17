@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.semicolonindia.schoolcrm.iw.MapWrapperLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rlMapParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/round_background_light"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:src="@drawable/left_arrow_dark_solid"
+            android:text="@string/back"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</in.semicolonindia.schoolcrm.iw.MapWrapperLayout>

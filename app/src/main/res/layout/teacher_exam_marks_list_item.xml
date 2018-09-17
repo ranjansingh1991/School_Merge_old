@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="6dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvSerialNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="@string/s_no"
+            android:textAllCaps="true"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_rollNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="@string/roll_number"
+            android:textAllCaps="true"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_studentName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="@string/student_name"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:layout_marginEnd="12dp"/>
+
+        <EditText
+            android:id="@+id/et_studentMark"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="@string/marks_obtained"
+            android:background="@drawable/list_rectangle"
+            android:textAllCaps="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="5dp"
+            android:hint="@string/_000"
+            android:inputType="number"
+            android:maxLength="3"
+            android:maxLines="1"
+            tools:ignore="SmallSp" />
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="48dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/list_rectangle"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="comment"
+            android:hint="@string/remark"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <!--android:background="@drawable/gold_drawable_background"-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvStudID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvExmID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTotalMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

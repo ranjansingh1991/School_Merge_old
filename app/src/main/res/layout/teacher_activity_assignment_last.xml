@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_app_background"
+    tools:context="in.semicolonindia.schoolcrm.teacher.activities.TeacherAssignmentLastActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp_Assignment_class"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bottom_line_light_thick"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+                <Spinner
+                    android:id="@+id/sp_Assignment_section"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bottom_line_light_thick"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp_Assignment_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bottom_line_light_thick"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+
+                <TextView
+                    android:id="@+id/tv_select_date"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_date_range_24px"
+                    android:drawablePadding="0dp"
+                    android:gravity="center"
+                    android:hint="@string/select_date"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="2dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bottom_line_light"
+                    android:hint="Title"
+                    android:maxLines="1"
+                    android:padding="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:padding="4dp">
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="164dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bottom_line_light"
+                    android:gravity="top"
+                    android:hint="Description"
+                    android:maxLines="3"
+                    android:isScrollContainer="true"
+                    android:maxHeight="164dp"
+                    android:minHeight="164dp"
+                    android:paddingBottom="2dp"
+                    android:padding="4dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:padding="4dp">
+
+                <EditText
+                    android:id="@+id/etMarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bottom_line_light"
+                    android:hint="Marks"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:paddingBottom="4dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Spinner
+                android:id="@+id/sp_ReportTo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bottom_line_light_thick"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/tv_file"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:drawableEnd="@drawable/ic_attach_file_48px"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="File (.TXT, .DOC, .DOCX or .PDF Only)"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_background_primary"
+                android:text="Upload"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

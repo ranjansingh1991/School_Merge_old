@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_background"
+    android:orientation="vertical"
+    tools:context="in.semicolonindia.schoolcrm.parent.activities.ParentNotificationNewActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back_button" />
+
+    <ListView
+        android:id="@+id/lvNotification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="6dp"
+        android:paddingBottom="6dp"
+        android:scrollbars="none" />
+
+
+</LinearLayout>
+

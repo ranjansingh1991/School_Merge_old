@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.semicolonindia.schoolcrm">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden"
+        android:fullBackupContent="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:noHistory="true"
+        android:roundIcon="@drawable/ic_launcher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.StudentHomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.TeachersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.AttendanceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.SyllabusActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.ClassRoutineActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.AccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.ExamMarksActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.LibraryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.PaymentsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.TransportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.NoticeboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.MessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.SubjectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.StudyMatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.AssignmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.NewsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.GalleryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.LeaderBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.BenchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.ScholarshipActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.ExtraCurriculamActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".student.activities.SupportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service
+            android:name=".services.MessageService"
+            android:enabled="true"
+            android:exported="false"
+            android:isolatedProcess="false" />
+
+        <activity android:name=".activities.CalenderActivity" />
+        <activity android:name=".teacher.activities.TeacherAssignmentLastActivity" />
+        <activity android:name=".teacher.activities.TeacherAttendanceActivity" />
+        <activity android:name=".teacher.activities.TeacherAccountActivity" />
+        <activity android:name=".teacher.activities.TeacherClassRoutinActivity" />
+        <activity android:name=".teacher.activities.TeacherExamMarksActivity" />
+        <activity android:name=".teacher.activities.TeacherLibraryActivity" />
+        <activity android:name=".teacher.activities.TeacherMessageActivity" />
+        <activity android:name=".teacher.activities.TeacherStudyMaterialActivity" />
+        <activity android:name=".teacher.activities.TeacherSubjectActivity" />
+        <activity android:name=".teacher.activities.TeacherSyllabusActivity" />
+        <activity android:name=".teacher.activities.TeacherTeachersActivity" />
+        <activity android:name=".teacher.activities.TeacherExtraCurriculumActivity" />
+        <activity android:name=".teacher.activities.TeacherHomeActivity" />
+        <activity android:name=".teacher.activities.TeacherAssignmentFirstActivity" />
+        <activity android:name=".teacher.activities.TeacherBenchActivity" />
+        <activity android:name=".teacher.activities.TeacherCalenderActivity" />
+        <activity android:name=".teacher.activities.TeacherChatActivity" />
+        <activity android:name=".teacher.activities.TeacherFeedbackActivity" />
+        <activity android:name=".teacher.activities.TeacherGalleryActivity" />
+        <activity android:name=".teacher.activities.TeacherLeaderboardActivity" />
+        <activity android:name=".teacher.activities.TeacherNewsActivity" />
+        <activity android:name=".teacher.activities.TeacherNoticeboardActivity" />
+        <activity android:name=".teacher.activities.TeacherNotificationActivity" />
+        <activity android:name=".teacher.activities.TeacherScholarshipActivity" />
+        <activity android:name=".teacher.activities.TeacherSupportActivity" />
+        <activity android:name=".parent.activities.ParentAccountActivity" />
+        <activity android:name=".parent.activities.ParentAssignmentLastActivity" />
+        <activity android:name=".parent.activities.ParentAssignmentFirstActivity" />
+        <activity android:name=".parent.activities.ParentAttendanceFirstActivity" />
+        <activity android:name=".parent.activities.ParentAttendanceLastActivity" />
+        <activity android:name=".parent.activities.ParentBenchActivity" />
+        <activity android:name=".parent.activities.ParentCalenderActivity" />
+        <activity android:name=".parent.activities.ParentChatActivity" />
+        <activity android:name=".parent.activities.ParentClassRoutinActivity" />
+        <activity android:name=".parent.activities.ParentClassRoutingNextActivity" />
+        <activity android:name=".parent.activities.ParentExamMarksFirstActivity" />
+        <activity android:name=".parent.activities.ParentExamMarksLastActivity" />
+        <activity android:name=".parent.activities.ParentExtraCurriculumActivity" />
+        <activity android:name=".parent.activities.ParentFeedbackActivity" />
+        <activity android:name=".parent.activities.ParentGalleryActivity" />
+        <activity android:name=".parent.activities.ParentKidsLocationMapActivity" />
+        <activity android:name=".parent.activities.ParentLeaderBoardActivity" />
+        <activity android:name=".parent.activities.ParentLibraryActivity" />
+        <activity android:name=".parent.activities.ParentLibraryNextActivity" />
+        <activity android:name=".parent.activities.ParentMessageActivity" />
+        <activity android:name=".parent.activities.ParentMessageNextActivity" />
+        <activity android:name=".parent.activities.ParentNewsActivity" />
+        <activity android:name=".parent.activities.ParentNoticeboardActivity" />
+        <activity android:name=".parent.activities.ParentNoticeboardNextActivity" />
+        <activity android:name=".parent.activities.ParentNotificationNewActivity" />
+        <activity android:name=".parent.activities.ParentPaymentFirstActivity" />
+        <activity android:name=".parent.activities.ParentPaymentLastActivity" />
+        <activity android:name=".parent.activities.ParentScholarshipActivity" />
+        <activity android:name=".parent.activities.ParentStudyMaterialFirstActivity" />
+        <activity android:name=".parent.activities.ParentStudyMaterialLastActivity" />
+        <activity android:name=".parent.activities.ParentSubjectFirstActivity" />
+        <activity android:name=".parent.activities.ParentSubjectLastActivity" />
+        <activity android:name=".parent.activities.ParentSupportActivity" />
+        <activity android:name=".parent.activities.ParentSyllabusFirstActivity" />
+        <activity android:name=".parent.activities.ParentSyllabusLastActivity" />
+        <activity android:name=".parent.activities.ParentTeacherLastActivity" />
+        <activity android:name=".parent.activities.ParentTeacherFirstActivity" />
+        <activity android:name=".parent.activities.ParentTransportLastActivity" />
+        <activity android:name=".parent.ParentHomeActivity" />
+        <activity android:name=".parent.activities.ParentTransportFirstActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCGL9ALtx5s60f1BauVjeLRBUUn9FMb4vY" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

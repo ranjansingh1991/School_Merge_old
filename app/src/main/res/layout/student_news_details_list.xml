@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/dialog_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_line_light">
+
+        <TextView
+            android:id="@+id/tv_NewsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="@string/app_title"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnViewNews"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background_primary"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/view"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!-- <View
+         android:layout_width="match_parent"
+         android:layout_height="1dip"
+         android:background="@android:color/darker_gray" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <in.semicolonindia.schoolcrm.civ.CircleImageView
+            android:id="@+id/img_News"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/bg_sketch" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_NewsDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|end"
+                android:text="@string/date"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_NewsTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Time"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_NewsAdver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Adversiment"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_NewsDesp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:maxLines="3"
+        android:text="@string/dummy_multiline_text"
+        android:background="@android:color/transparent"
+        android:textColor="@color/colorTextSecondary" />
+
+</LinearLayout>

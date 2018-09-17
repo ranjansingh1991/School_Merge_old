@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.semicolonindia.schoolcrm.parent.activities.ParentAttendanceLastActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <in.semicolonindia.schoolcrm.civ.CircleImageView
+            android:id="@+id/img_Kid"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/bg_sketch" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:text="Name :"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextSecondary" />
+
+            <TextView
+                android:id="@+id/tv_kidName"
+                android:text="@string/kid_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center|start"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:text="Class :"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextSecondary" />
+
+
+                <TextView
+                    android:id="@+id/tv_ClassName"
+                    android:text="@string/class_stv_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextSecondary"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:text="Section :"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextSecondary" />
+
+                <TextView
+                    android:id="@+id/tv_SectionName"
+                    android:text="@string/section_b"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextSecondary"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="5dip"
+        android:layout_marginEnd="5dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_month"
+            android:textSize="14sp"
+            android:gravity="end"
+            android:layout_marginStart="10dip"
+            android:layout_marginEnd="65dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/tv_Year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/year_2017"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_Month"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:gravity="end"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/colorText" />
+
+    <ListView
+        android:id="@+id/lv_List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp" />
+</LinearLayout>
+
+

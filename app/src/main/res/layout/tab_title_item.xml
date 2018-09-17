@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvTabName"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:maxLines="1"
+    android:minWidth="64dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:layout_gravity="center"
+    android:scrollHorizontally="true"
+    android:textAllCaps="true"
+    android:textColor="@color/colorText" />

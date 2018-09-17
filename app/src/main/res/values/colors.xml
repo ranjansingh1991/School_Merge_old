@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40C4D6</color>
+    <color name="colorPrimaryDark">#C540C4D6</color>
+    <color name="colorAccent">#C540C4D6</color>
+
+    <color name="colorButtonBG">#FF40C4D6</color>
+    <color name="colorTextSecondary">#FF888888</color>
+    <color name="colorButtonBGStatusSuccess">#FF40D684</color>
+    <color name="colorButtonBGStatusFailure">#FFD64240</color>
+    <color name="colorButtonBGStatusDisabled">#FFE1DCDC</color>
+    <color name="colorButtonBGRed">#FFD13636</color>
+    <color name="colorBGCStart">#3CA649D4</color>
+    <color name="colorBGCenter">#3C40C4D6</color>
+    <color name="colorBGEnd">#3CA440D6</color>
+    <color name="colorBGCStartDark">#A8A649D4</color>
+    <color name="colorBGCenterDark">#A840C4D6</color>
+    <color name="colorBGEndDark">#A8A440D6</color>
+    <color name="colorBlackAlpha">#96000000</color>
+    <color name="colorWhiteAlpha">#96FFFFFF</color>
+    <color name="colorHomeBGList">#B9FFFFFF</color>
+    <color name="colorHint">#96B7A0A0</color>
+    <color name="colorText">#FF616266</color>
+    <color name="gray">#FFC7C7C7</color>
+    <color name="chatListBackground">#FFF3F3F4</color>
+    <color name="colorIconsLight">#FFAAAAAA</color>
+
+    <color name="header_back">#00BFB1</color>
+    <color name="colorRedText">#fd0c0c</color>
+    <color name="colorAppText">#FF2F4366</color>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_line_light">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="@string/app_title"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_dark"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="96dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background_primary"
+            android:gravity="center"
+            android:paddingEnd="16dp"
+            android:enabled="false"
+            android:paddingStart="16dp"
+            android:text="@string/status"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/amount"
+                android:textAllCaps="true"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorTextSecondary" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|end"
+                android:text="@string/dummy_Date"
+                android:textAllCaps="true"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorTextSecondary" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDesp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:maxLines="2"
+            android:text="@string/dummy_multiline_text"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorTextSecondary"/>
+    </LinearLayout>
+</LinearLayout>

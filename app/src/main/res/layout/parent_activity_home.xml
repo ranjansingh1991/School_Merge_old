@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_sketch"
+    tools:context="in.semicolonindia.schoolcrm.parent.ParentHomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <in.semicolonindia.schoolcrm.civ.CircleImageView
+                android:id="@+id/civ_profileImage"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/white_circle_background"
+                android:contentDescription="@string/user_image"
+                android:padding="4dp"
+                android:src="@drawable/ic_user_female" />
+
+            <TextView
+                android:id="@+id/tvUserFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/student_name"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvSchoolName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/school_name"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@android:color/background_light" />
+
+                <TextView
+                    android:id="@+id/tvCITY"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/city_name"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingEnd="24dp"
+            android:paddingStart="0dp">
+
+            <ImageButton
+                android:id="@+id/imgBtnNotification"
+                android:layout_width="42dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_circle_background"
+                android:contentDescription="@string/notification"
+                android:padding="16dp"
+                android:src="@drawable/ic_bell_dark_solid" />
+        </LinearLayout>
+
+        <in.semicolonindia.schoolcrm.sliding.SlidingTabLayout
+            android:id="@+id/stLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorHomeBGList" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

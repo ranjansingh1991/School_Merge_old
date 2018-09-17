@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_background"
+    android:orientation="vertical"
+
+    tools:context=".student.activities.PaymentsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/student_toolbar_back_button" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_search_edittext"
+        android:gravity="center_vertical"
+        android:hint="@string/search_payments"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingBottom="6dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="6dp"
+        android:textColor="@color/colorBlackAlpha"
+        android:textColorHint="@color/colorHint"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/lvPayments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="6dp"
+        android:paddingBottom="6dp"
+        android:scrollbars="none" />
+
+
+</LinearLayout>
